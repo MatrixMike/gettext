@@ -10,13 +10,17 @@
 
 int main()
 {
-  /* Setting the i18n environment */
-  setlocale (LC_ALL, "");
-  bindtextdomain ("hello", getenv("PWD"));
-  textdomain ("hello");
+  /* Setting the i18n environment */  /* internationalization */
+  setlocale (LC_ALL, "");    /* there is underscore here */
+  bindtextdomain ("gettextEG", getenv("PWD"));
+  textdomain ("gettextEG");
 
   /* Example of i18n usage */
+  /* afaik the language in to which strings are to be translated is NOT mentioned */
   printf(_("Hello World\n"));
+  printf(_("The first 10 numbers are\n"));
+  printf(_("one\n"));
+  printf(_("two\n"));
 
   return EXIT_SUCCESS;
 }

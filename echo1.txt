@@ -1,0 +1,1 @@
+xgettext --keyword=_ --language=c --add-comments --sort-output -o po/hello.pot   gettextEG.c 
