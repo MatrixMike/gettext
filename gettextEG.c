@@ -12,7 +12,7 @@ int main()
 {
   /* Setting the i18n environment */  /* internationalization */
   setlocale (LC_ALL, "");    /* there is underscore here */
-  bindtextdomain ("gettextEG", getenv("PWD"));
+  bindtextdomain ("gettextEG", getenv("PWD") );  // "/usr/share/locale/fr/LC_MESSAGES/"
   textdomain ("gettextEG");
 
   /* Example of i18n usage */
